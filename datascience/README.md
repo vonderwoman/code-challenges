@@ -17,9 +17,9 @@ We adivse you to use a virtual environment and install the dependencies there:
  pip install -r requirements.txt
  ```
  
-In order to succesfully do this coding challenge you will need to  have a gmail [Account](https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=SignUp) to enter the [google cloude console](https://console.cloud.google.com) where you can create your first project. Google might keep trying to get you to sign up for their free trial but you can safely ignore that, our challenge works with the [Sandbox version](https://cloud.google.com/bigquery/docs/sandbox). 
+In order to succesfully do this coding challenge you will need to  have a [gmail account](https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=SignUp) to enter the [google cloude console](https://console.cloud.google.com) where you can create your first project. Google might keep trying to get you to sign up for their free trial but you can safely ignore that, our challenge works with the [Sandbox version](https://cloud.google.com/bigquery/docs/sandbox). 
 
-Once youfinisehd setting up your project you you will need to run 
+Once you finisehd setting up your project you you will need to run 
 
 
 ```
@@ -27,7 +27,7 @@ gcloud auth application-default login
 ```
 and also set to your default project. 
 
-If you run into issues with using BigQuery in Jupyter Notebook you can refer to the [documentation](https://cloud.google.com/bigquery/docs/visualize-jupyter) where you can find all the information you will need. 
+If you run into issues with using BigQuery in Jupyter Notebook you can refer to the documentation [here] (https://cloud.google.com/bigquery/docs/visualize-jupyter) and the links provided above where you can find all the information you will need. 
 
 #### Time Allotment
 We respect your time and don't expect you to spend more than 3 hours on this. Try to get as far as you can, your solutions will then be discussed in the next interview, feel free to also add comments and explain what you intended to do. 

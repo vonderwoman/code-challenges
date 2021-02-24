@@ -1,8 +1,7 @@
 # 7Learnings Data Scientist Code Challenges
 
 Hello potential 7Learnings colleague!
-This code challenge is an opportunity for you to demonstrate your skills and knowledge regarding data science as well as your ability to work independently and use documentation where required. 
-
+This coding challenge is an opportunity for you to demonstrate your skills and knowledge regarding data science as well as your ability to work independently and use documentation where required. It is not about getting the right solution, try to get as far as you can we will discuss your approach and experience in the interview.
 
 ## The Coding Challenge
 

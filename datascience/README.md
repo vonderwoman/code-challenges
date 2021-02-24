@@ -17,12 +17,13 @@ We adivse you to use a virtual environment and install the dependencies there:
  pip install -r requirements.txt
  ```
  
-In order to succesfully do this coding challenge you will need to create an [account](https://accounts.google.com/ServiceLogin/signinchooser?service=cloudconsole&passive=1209600&osid=1&continue=https%3A%2F%2Fconsole.cloud.google.com%2Fbigquery%3Fref%3Dhttps%3A%2F%2Faccounts.google.com%2FLogout%3Fservice%253Dcloudconsole%2526continue%253Dhttps%3A%2F%2Fconsole.cloud.google.com%2Fbigquery%2526hl%253Den_GB&followup=https%3A%2F%2Fconsole.cloud.google.com%2Fbigquery%3Fref%3Dhttps%3A%2F%2Faccounts.google.com%2FLogout%3Fservice%253Dcloudconsole%2526continue%253Dhttps%3A%2F%2Fconsole.cloud.google.com%2Fbigquery%2526hl%253Den_GB&flowName=GlifWebSignIn&flowEntry=ServiceLogin) for the google cloude console.
+In order to succesfully do this coding challenge you will need to create an [account](https://accounts.google.com/ServiceLogin/signinchooser?service=cloudconsole&passive=1209600&osid=1&continue=https%3A%2F%2Fconsole.cloud.google.com%2Fbigquery%3Fref%3Dhttps%3A%2F%2Faccounts.google.com%2FLogout%3Fservice%253Dcloudconsole%2526continue%253Dhttps%3A%2F%2Fconsole.cloud.google.com%2Fbigquery%2526hl%253Den_GB&followup=https%3A%2F%2Fconsole.cloud.google.com%2Fbigquery%3Fref%3Dhttps%3A%2F%2Faccounts.google.com%2FLogout%3Fservice%253Dcloudconsole%2526continue%253Dhttps%3A%2F%2Fconsole.cloud.google.com%2Fbigquery%2526hl%253Den_GB&flowName=GlifWebSignIn&flowEntry=ServiceLogin) for the google cloude console
 and run
 
 ```
 gcloud auth application-default login
 ```
+You will need a credit card for this, but you will get free credit from Google and a monthly [Free Tier](https://cloud.google.com/free/docs/gcp-free-tier) which does not expire. This coding challenge only makes use of the Free Tier meaning your Google credit will not be affected. 
 
 #### Time Allotment
 We respect your time and don't expect you to spend more than 3 hours on this. Try to get as far as you can, your solutions will then be discussed in the next interview, feel free to also add comments and explain what you intended to do. 

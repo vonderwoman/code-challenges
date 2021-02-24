@@ -17,10 +17,9 @@ We adivse you to use a virtual environment and install the dependencies there:
  pip install -r requirements.txt
  ```
  
-In order to succesfully do this coding challenge you will need to  have a gmail [account](https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=SignUp) to enter the [google cloude console](https://console.cloud.google.com) where you can create your first project. Google might keep trying to get you to sign up for their free trial but you can safely ignore that, our challenge works with the Sandbox version.
+In order to succesfully do this coding challenge you will need to  have a gmail [Account](https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=SignUp) to enter the [google cloude console](https://console.cloud.google.com) where you can create your first project. Google might keep trying to get you to sign up for their free trial but you can safely ignore that, our challenge works with the [Sandbox version](https://cloud.google.com/bigquery/docs/sandbox). 
 
-
-Next you will need to run 
+Once youfinisehd setting up your project you you will need to run 
 
 
 ```

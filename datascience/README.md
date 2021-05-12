@@ -26,7 +26,7 @@ gcloud auth application-default login
 ```
 and also set to your default project. 
 
-If you run into issues with using BigQuery in Jupyter Notebook you can refer to the documentation [here] (https://cloud.google.com/bigquery/docs/visualize-jupyter) and the links provided above where you can find all the information you will need. 
+If you run into issues with using BigQuery in Jupyter Notebook you can refer to the documentation [here](https://cloud.google.com/bigquery/docs/visualize-jupyter) and the links provided above where you can find all the information you will need. 
 
 #### Time Allotment
 We respect your time and don't expect you to spend more than 3 hours on this. Try to get as far as you can, your solutions will then be discussed in the next interview, feel free to also add comments and explain what you intended to do. 

@@ -8,7 +8,7 @@ It is not about getting the right solution, try to get as far as you can we will
 ## The Challenge
 
 You are tasked with implementing missing parts of [AppComponent](https://github.com/7Learnings/code-challenges/blob/700fc8dfc56e547014f1d3c8f0bf38ffa547ca49/frontend/src/app/app.component.ts).
-Challenge description is provided in the comments of `app.component.ts`.
+Challenge description is provided in the comments of [`app.component.ts`](https://github.com/7Learnings/code-challenges/blob/700fc8dfc56e547014f1d3c8f0bf38ffa547ca49/frontend/src/app/app.component.ts#L51-L82).
 
 The project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5 ([installation instructions](https://angular.io/guide/setup-local#install-the-angular-cli)).
 
@@ -40,3 +40,7 @@ Your application will be reviewed by our engineers. The aspects of your code we 
 ## What We Do NOT Review
 Styling and UX.
 
+## Submition
+Email a link to a repository with your implementation to your 7Learnings contact.
+
+Good luck!

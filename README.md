@@ -39,6 +39,7 @@ Your application will be reviewed by our engineers. The aspects of your code we 
 ## Links To Team Specific Challenges
 
 - [Data Scientist Challenges](./datascience/README.md)
+- [Front-End Developer Challenge](./frontend/README.md)
 
 
 ## Credits

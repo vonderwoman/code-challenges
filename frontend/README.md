@@ -1,27 +1,42 @@
-# InterviewApp
+# 7Learnings Front-End Development Code Challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+Hello potential 7Learnings colleague!
+This coding challenge is an opportunity for you to demonstrate your skills and knowledge regarding front-end-development as well as 
+your ability to work independently and use documentation where required. 
+It is not about getting the right solution, try to get as far as you can we will discuss your approach and experience in the interview.
 
-## Development server
+## The Challenge
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+You are tasked with implementing missing parts of [AppComponent](https://github.com/7Learnings/code-challenges/blob/700fc8dfc56e547014f1d3c8f0bf38ffa547ca49/frontend/src/app/app.component.ts).
+Challenge description is provided in the comments of `app.component.ts`.
 
-## Code scaffolding
+The project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5 ([installation instructions](https://angular.io/guide/setup-local#install-the-angular-cli)).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+When all the prerequisites are met, you can install all required modules and serve the application:
+ ```
+ npm install
+ ng serve --open
+ ```
 
-## Build
+Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Time Allotment
 
-## Running unit tests
+We respect your time and don't expect you to spend more than 3 hours on this. 
+Try to get as far as you can, your solutions will then be discussed in the next interview, feel free to also add comments and explain what you intended to do. 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## What We Review
 
-## Running end-to-end tests
+Your application will be reviewed by our engineers. The aspects of your code we will judge include:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- ability to get the technical environment set up 
+- completion of tasks
+    - User input 
+    - Input validation
+    - Handling observables
+    - Error Handling
+- code cleanness
 
-## Further help
+## What We Do NOT Review
+Styling and UX.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

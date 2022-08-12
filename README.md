@@ -40,6 +40,7 @@ Your application will be reviewed by our engineers. The aspects of your code we 
 
 - [Data Scientist Challenges](./datascience/README.md)
 - [Front-End Developer Challenge](./frontend/README.md)
+- [DevOps Challenge](./devops/README.md)
 
 
 ## Credits

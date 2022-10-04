@@ -26,11 +26,31 @@ table_to_parquet(
 
 ## The Challenge
 
-You are tasked to reduce the network bandwidth while downloading table data (parquet file) to the local storage. To give you a bit of context, the data scientists need to download the data from BigQuery tables to train/eval/test the machine learning models.
-The data we have is often quite huge and it costs money on Google Cloud and take time to download all of them. That's why we would like you to take deep inspection of our code or find a new way to save the network bandwidth.
+The challenge is to implement a "pipeline" command that prepares data for model training. 
+It does so in two steps: `get-data` and `check-data`.
+
+`get-data` retrieves the data from a BigQuery table and stores it locally. 
+As mentioned above, helper method that returns a parquet file given a BigQuery table is already provided for your convenience.
+
+You will need to modify `get-data` step for the following tasks:
+
+  1a. Table is relatively big with ~5 million rows. It contains train, evaluation and test datasets.
+      Split parquet file into 3 separate (in-memory) datasets: train, eval, test. 
+      Use `_data_split` column to determine which dataset the sample should correspond to.
+
+  1b. Shuffle datasets according to `_data_shuffle` column in a reproducible way.
+      Row order after shuffling needs to be the same between separate runs.
+
+`check-data` makes sure that training and evaluation datasets are similarly distributed.
+There is only one task to implement in this step:
+
+  2. Compare distributions between train and eval datasets.
+     Raise an error or display a warning if distributions are significantly different.
+
+     (Optional) In case of significantly different distributions, plo
+
 
 Feel the task is too easy? We have a bonus task for you.
-Before training models on that data, we need to load it fully into memory to perform shuffling and splitting into three different data splits (train/eval/test).
 It would be nice if splitting and sorting by the `_data_split` and `_data_shuffle` columns would already happen when when writing to the parquet files, so we could stream it during model training.
 
 #### Time Allotment

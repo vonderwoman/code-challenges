@@ -1,3 +1,4 @@
+import sys
 from utils import table_to_parquet
 from google.cloud import bigquery_storage as bqs
 from utils import table_to_parquet

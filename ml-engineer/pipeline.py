@@ -17,8 +17,7 @@ def check_data():
 
 
 if __name__ == '__main__':
-    match sys.argv[1]:
-        case 'get-data':
-            get_data()
-        case 'check-data':
-            check_data()
+    if 'get-data' in sys.argv:
+        get_data()
+    if 'check-data' in sys.argv:
+        check_data()

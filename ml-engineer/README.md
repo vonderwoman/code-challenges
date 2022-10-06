@@ -24,6 +24,8 @@ It fetches the entire table from BigQuery and saves it locally in parquet format
 Feel free to change it if you find a better way to do it. 
 See `pipeline.py` for a usage example.
 
+Please keep in mind that the table is relatively big, and you will need ~150MB of available space to store it locally.
+
 ## The Challenge
 
 The challenge is to implement a "pipeline" command that prepares data for model training. 

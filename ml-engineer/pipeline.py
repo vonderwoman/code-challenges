@@ -5,7 +5,7 @@ from utils import table_to_parquet
 
 
 def get_data():
-    table_to_parquet('candidate-01-7l.data.transactions', 'transactions.parquet')
+    table_to_parquet('candidate-01-7l.data.ml_interview_transactions', 'transactions.parquet')
     # 1a. split parquet files by _data_split column
 
     # 1b. reproducible shuffling of data by precomputed _data_shuffle column

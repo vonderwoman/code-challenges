@@ -13,11 +13,11 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Next, you will need a Google account to setup [default application credentials](https://cloud.google.com/docs/authentication/provide-credentials-adc#local-dev) locally:
+Next, you will need a Google account to setup [default application credentials](https://cloud.google.com/docs/authentication/provide-credentials-adc#local-dev) locally (without this, you will not be able to fetch data for the challenge):
 ```sh
 gcloud auth application-default login
 ```
-Without this step you will not be able to access our table in BigQuery.
+
 
 We also provide a helper function (`table_to_parquet`) in the `utils.py` to let you focus on the challenge. 
 It fetches the entire table from BigQuery and saves it locally in parquet format. 
@@ -35,6 +35,7 @@ Example usage:
 python pipeline.py get-data check-data
 ```
 
+### Part 1
 `get-data` retrieves the data from a BigQuery table and stores it locally. 
 As mentioned above, helper method that returns a parquet file given a BigQuery table is already provided for your convenience.
 
@@ -47,6 +48,7 @@ You will need to modify `get-data` step for the following tasks:
   1b. Shuffle datasets according to `_data_shuffle` column in a reproducible way.
       Row order after shuffling needs to be the same between separate runs.
 
+### Part 2
 `check-data` makes sure that training and evaluation datasets are similarly distributed.
 There is only one task to implement in this step:
 

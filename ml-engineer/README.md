@@ -4,30 +4,34 @@ The 7Learnings code challenge is an opportunity to demonstrate proficiency in th
 
 ## Coding environment
 
-At 7Learnings, we use Python 3.10 as the main coding language. So it's strongly encourage to create isolated Python using [virtualenv](https://virtualenv.pypa.io/en/latest/) to prepare yourself for the following challenges.
-You will need a Google account and enable [default application credentials](https://cloud.google.com/docs/authentication/provide-credentials-adc#local-dev) locally before running the code snippet below.
+At 7Learnings, we use Python 3.10 as the main coding language. So it's strongly encouraged to create isolated Python environment using [virtualenv](https://virtualenv.pypa.io/en/latest/) to prepare yourself for the challenge.
 
+First, create a python environment and install required packages:
 ```sh
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-We also provide a helper function (`table_to_parquet`) in the `utils.py` to let you focus on the challenges. But feel free to change it if you find a better way to do it. You can find example code below.
-
-```python
-from google.cloud import bigquery_storage as bqs
-from utils import table_to_parquet
-
-table_to_parquet(
-    bqs.BigQueryReadClient(), "candidate-01-7l.devops.transactions", "downloaded_data"
-)
+Next, you will need a Google account to setup [default application credentials](https://cloud.google.com/docs/authentication/provide-credentials-adc#local-dev) locally:
+```sh
+gcloud auth application-default login
 ```
+Without this step you will not be able to access our table in BigQuery.
+
+We also provide a helper function (`table_to_parquet`) in the `utils.py` to let you focus on the challenge. 
+It fetches the entire table from BigQuery and saves it locally in parquet format. 
+Feel free to change it if you find a better way to do it. 
+See `pipeline.py` for a usage example.
 
 ## The Challenge
 
 The challenge is to implement a "pipeline" command that prepares data for model training. 
 It does so in two steps: `get-data` and `check-data`.
+Example usage:
+```
+python pipeline.py get-data check-data
+```
 
 `get-data` retrieves the data from a BigQuery table and stores it locally. 
 As mentioned above, helper method that returns a parquet file given a BigQuery table is already provided for your convenience.
@@ -44,11 +48,8 @@ You will need to modify `get-data` step for the following tasks:
 `check-data` makes sure that training and evaluation datasets are similarly distributed.
 There is only one task to implement in this step:
 
-  2. Compare distributions between train and eval datasets.
+  2. Compare distributions of features between train and eval datasets.
      Raise an error or display a warning if distributions are significantly different.
-
-     (Optional) In case of significantly different distributions, plo
-
 
 Feel the task is too easy? We have a bonus task for you.
 It would be nice if splitting and sorting by the `_data_split` and `_data_shuffle` columns would already happen when when writing to the parquet files, so we could stream it during model training.

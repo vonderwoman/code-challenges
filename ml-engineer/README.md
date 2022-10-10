@@ -13,9 +13,11 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Include any additional dependencies you need in [requirements.txt](https://github.com/7Learnings/code-challenges/blob/f473d873dc9b83b786af702fa475c7dbeeee4b65/ml-engineer/requirements.txt).
+
 Secondly, you will need to download synthetic transactions data for this assignment.
 It is available in `.parquet` format under [https://storage.googleapis.com/candidate-01-7l-ml-engineer/transactions.parquet](https://storage.googleapis.com/candidate-01-7l-ml-engineer/transactions.parquet).
-For convenience, place it in the same folder as `pipeline.py`.
+For convenience, save the file under the same folder as `pipeline.py`.
 
 Please keep in mind that the table is relatively big, and you will need ~150MB of available space to store it locally.
 

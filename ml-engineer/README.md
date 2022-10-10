@@ -13,16 +13,9 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Next, you will need a Google account to setup [default application credentials](https://cloud.google.com/docs/authentication/provide-credentials-adc#local-dev) locally (without this, you will not be able to fetch data for the challenge):
-```sh
-gcloud auth application-default login
-```
-
-
-We also provide a helper function (`table_to_parquet`) in the `utils.py` to let you focus on the challenge. 
-It fetches the entire table from BigQuery and saves it locally in parquet format. 
-Feel free to change it if you find a better way to do it. 
-See `pipeline.py` for a usage example.
+Secondly, you will need to download synthetic transactions data for this assignment.
+It is available in `.parquet` format under [https://storage.googleapis.com/candidate-01-7l-ml-engineer/transactions.parquet](https://storage.googleapis.com/candidate-01-7l-ml-engineer/transactions.parquet).
+For convenience, place it in the same folder as `pipeline.py`.
 
 Please keep in mind that the table is relatively big, and you will need ~150MB of available space to store it locally.
 
@@ -36,8 +29,7 @@ python pipeline.py get-data check-data
 ```
 
 ### Part 1
-`get-data` retrieves the data from a BigQuery table and stores it locally. 
-As mentioned above, helper method that returns a parquet file given a BigQuery table is already provided for your convenience.
+`get-data` loads transactions data (from the downloaded file) into memory. 
 
 You will need to modify `get-data` step for the following tasks:
 
@@ -54,9 +46,6 @@ There is only one task to implement in this step:
 
   2. Compare distributions of features between train and eval datasets.
      Raise an error or display a warning if distributions are significantly different.
-
-Feel the task is too easy? We have a bonus task for you.
-It would be nice if splitting and sorting by the `_data_split` and `_data_shuffle` columns would already happen when when writing to the parquet files, so we could stream it during model training.
 
 #### Time Allotment
 

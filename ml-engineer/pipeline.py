@@ -1,11 +1,11 @@
 import sys
-from utils import table_to_parquet
-from google.cloud import bigquery_storage as bqs
-from utils import table_to_parquet
+import pyarrow.parquet as pq
 
 
 def get_data():
-    table_to_parquet('candidate-01-7l.data.ml_interview_transactions', 'transactions.parquet')
+    # Prerequisite: download `transactions.parquet` from https://storage.googleapis.com/candidate-01-7l-ml-engineer/transactions.parquet
+    data_source = pq.read_table("transactions.parquet")
+
     # 1a. split parquet files by _data_split column
 
     # 1b. reproducible shuffling of data by precomputed _data_shuffle column

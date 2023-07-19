@@ -1,0 +1,13 @@
+Dockerfile
+README.md
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+venv/
+terraform/
+tmp/
+.git
+Makefile
+# .gitignore
+prices_*.csv

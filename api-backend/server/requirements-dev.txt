@@ -1,0 +1,7 @@
+-r requirements.txt
+
+pre-commit
+types-google-cloud-ndb
+types-python-jose
+types-requests
+pandas-stubs

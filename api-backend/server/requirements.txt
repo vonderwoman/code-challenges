@@ -1,0 +1,8 @@
+-c constraints.txt
+
+fastapi
+uvicorn[standard]
+gunicorn
+google-cloud-storage
+python-multipart
+python-jose[cryptography]

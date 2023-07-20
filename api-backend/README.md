@@ -33,8 +33,8 @@ python upload_prices.py credentials.json prices.csv
 ### Client (**to be implemented**)
 
 1. Correctly authenticate with the API using `credentials.json`.
-2. Upload all the prices from the given `prices.csv` to the `/product-prices/` endpoint.
-3. You can check `/validate-product-prices/` to see if you upload was correct.
+2. Upload all the prices from the given `prices.csv` to the `/product-prices` endpoint.
+3. You can check `/validate-product-prices` to see if you upload was correct.
 
 #### Time Allotment
 

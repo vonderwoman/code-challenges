@@ -104,7 +104,7 @@ async def verify_session(token: str = Depends(oauth2_scheme)) -> Session:
     return Session(client_id=payload["sub"], session_id=payload["sid"])
 
 
-@app.get("/users/me/", description="Get back session info to test authentication")
+@app.get("/users/me", description="Get back session info to test authentication")
 async def get_client(session: Annotated[Session, Depends(verify_session)]) -> Session:
     return session
 
@@ -133,7 +133,7 @@ class ImportProductPricesOut(BaseModel):
 
 
 @app.post(
-    "/product-prices/",
+    "/product-prices",
     description="""
 Import given prices into shop.
 
@@ -185,7 +185,7 @@ class ValidateProductPrices(BaseModel):
 
 
 @app.get(
-    "/validate-product-prices/",
+    "/validate-product-prices",
     description="""
 Read back alll imported product prices and validate your submission.
 """,

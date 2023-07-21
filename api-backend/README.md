@@ -51,7 +51,7 @@ Your code will be reviewed by our engineers. The aspects of your code we will ju
 
 ## Submitting your results
 
-1. Send us the us the `upload.gcs_url` from your final `/validate-product-prices/` request.
+1. Send us the us the `upload.gcs_url` from your final `/validate-product-prices` request.
 2. Send us your final code, preferably as either one of the following:
    - git-bundle: `git bundle create my_changes.bundle origin/main..`
    - patches: `git format-patch origin/main..`

@@ -1,0 +1,30 @@
+# Documentation for Setting Up and Running the Data Science Coding Challenge
+
+## Step 1: Clone the Repository
+First, clone the repository to your local machine if you haven't already done so.
+
+```bash
+git clone <repository_url>
+cd <repository_name>
+
+
+## Step 2: Set Up a Virtual Environment
+python -m venv venv
+source venv/bin/activate
+
+## Step 3: Install Dependencies
+pip install -r requirements.txt
+
+## Step 4: Set Up Google Cloud Platform (GCP)
+gcloud auth application-default login
+gcloud config set project PROJECT_ID
+
+## Step 5 Enable BigQuery API
+Open the Google Cloud Console.
+Navigate to APIs & Services > Library.
+Search for "BigQuery API".
+Click Enable.
+
+## Step 6 Step 5: Working with Jupyter Notebook
+jupyter notebook
+
